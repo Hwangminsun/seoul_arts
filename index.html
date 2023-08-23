@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예술의 전당</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="skip">
+        <a href="#gnb">메뉴바로가기</a>
+        <a href="#container">콘텐츠바로가기</a>
+    </div>
+    <header id="header">
+        <div class="inner">
+            <h1><a href="javascript:void(0)"><img src="img/logo.png" alt="logo"></a></h1>
+            <ul class="nav1">
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="member.html">회원가입</a></li>
+            </ul>
+            <ul class="icon">
+                <li>
+                    <a class="search" href="javascript:void(0)"><img src="img/search_W.png" alt="search"></a>
+                </li>
+                <li>
+                    <a href="schedule.html"><img src="img/schedule.png" alt="schedule"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu">
+            <div class="menubox">
+                <ul class="nav2">
+                    <li><a href="javascript:void(0)">공연·전시</a>
+                        <ul class="sub">
+                            <li><a href="schedule.html">전체일정</a></li>
+                            <li><a href="javascript:void(0)">오늘의 공연·전시</a></li>
+                            <li><a href="javascript:void(0)">진행 예정 프로그램</a></li>
+                            <li><a href="javascript:void(0)">SAC 기획 프로그램</a></li>
+                            <li><a href="javascript:void(0)">패키지</a></li>
+                            <li><a href="javascript:void(0)">티켓 오픈 공지</a></li>
+                            <li><a href="javascript:void(0)">싹(SAC)딜</a></li>
+                            <li><a href="javascript:void(0)">당일 할인 티켓</a></li>
+                            <li><a href="javascript:void(0)">예매취소안내</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">공간·대관</a>
+                        <ul class="sub">
+                            <li><a href="javascript:void(0)">공간소개</a></li>
+                            <li><a href="javascript:void(0)">공간별 대관안내</a></li>
+                            <li><a href="javascript:void(0)">입장관 운영안내</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">아카데미</a>
+                        <ul class="sub">
+                            <li><a href="javascript:void(0)">아카데미 안내</a></li>
+                            <li><a href="javascript:void(0)">수강신청</a></li>
+                            <li><a href="javascript:void(0)">아카데미 FAQ</a></li>
+                            <li><a href="javascript:void(0)">오디션 신청</a></li>
+                            <li><a href="javascript:void(0)">나의강좌</a></li>
+                            <li><a href="javascript:void(0)">온라인 사군자</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">소식·이용·참여</a>
+                        <ul class="sub">
+                            <li><a href="javascript:void(0)">전담소식</a></li>
+                            <li><a href="javascript:void(0)">오시는길 주차안내</a></li>
+                            <li><a href="javascript:void(0)">편의 서비스</a></li>
+                            <li><a href="javascript:void(0)">입점매장</a></li>
+                            <li><a href="javascript:void(0)">고객센터</a></li>
+                            <li><a href="javascript:void(0)">이벤트</a></li>
+                            <li><a href="javascript:void(0)">세게음악분수(선곡표)</a></li>
+                            <li><a href="javascript:void(0)">포스트/웹진/매거진</a></li>
+                            <li><a href="javascript:void(0)">관람평</a></li>
+                            <li><a href="javascript:void(0)">관람예절</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">기관소개</a>
+                        <ul class="sub">
+                            <li><a href="javascript:void(0)">기관소개 메인</a></li>
+                            <li><a href="javascript:void(0)">예술의 전당소개</a></li>
+                            <li><a href="javascript:void(0)">특별사업</a></li>
+                            <li><a href="javascript:void(0)">정보공개</a></li>
+                            <li><a href="javascript:void(0)">기부금 활용내역</a></li>
+                            <li><a href="javascript:void(0)">후원하기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div> <!-- menubox 끝 -->
+            <div class="subbox"></div> <!-- 풀메뉴 배경 판 -->
+        </div> <!-- menu 끝 -->
+    </header>
+    <div class="search_box">
+        <div class="search_box1">
+            <div>
+                <a href="javascript:void(0)">
+                    <img src="img/search_W.png" alt="검색아이콘">
+                </a>
+                <input type="text" id="value" placeholder="검색어를 입력하세요.">
+            </div>
+            <div class="tag">
+                <ul>
+                    <li><a href="subpage.html">오셀로</a><span></span></li>
+                    <li><a href="javascript:void(0)">주차요금</a><span></span></li>
+                    <li><a href="javascript:void(0)">심청</a><span></span></li>
+                    <li><a href="javascript:void(0)">대관요금</a><span></span></li>
+                </ul>
+            </div>
+        </div>
+    </div> <!-- 검색 끝 -->
+    <section id="main">
+        <div class="container">
+            <div class="slick-silde">
+                <div class="mainbox">
+                    <div class="mainback1"></div>
+                    <div class="main_content">
+                        <div class="textbox">
+                            <ul class="txt1">
+                                <li>CJ 토월극장</li>
+                                <li>오셀로</li>
+                                <li>2023.05.12(금) ~ 06.04(일)</li>
+                            </ul>
+                            <p>420년의 시간을 넘어 무대 위로 펼쳐지는 세계적인 대문호 윌리엄 셰익스피어의 명작<br />
+                                광기 어린 추악한 욕망과 질투, 이로 인해 추락하는 고결한 사랑을 강렬하게 그려낸 셰익스피어의 희곡 『오셀로』<br />
+                                실험적이고 세련된 연출로 동시대와 호흡하는 연출가 박정희를 만나 시공을 초월한 작품으로 다시 태어난다.
+                            </p>
+                        </div>
+                        <div class="post_img">
+                            <p><a href="subpage.html"><img src="img/m1.gif" alt="오셀로"></a></p>
+                        </div>
+                    </div>
+                    <div class="mainbottom"></div>
+                </div>
+            </div>
+            <div class="slick-silde">
+                <div class="mainbox">
+                    <div class="mainback2"></div>
+                    <div class="main_content">
+                        <div class="textbox">
+                            <ul class="txt1">
+                                <li>자유소극장</li>
+                                <li>국립현대무용단[테스트코레오그라피, 뉴-애튜 프로젝드]</li>
+                                <li>2023.06.30(금)~07.02(일)</li>
+                            </ul>
+                        </div>
+                        <div class="post_img">
+                            <p><a href="javascript:void(0)"><img src="img/m2.gif"
+                                        alt="국립현대무용단[테스트코레오그라피, 뉴-애튜 프로젝드]"></a></p>
+                        </div>
+                    </div>
+                    <div class="mainbottom"></div>
+                </div>
+            </div>
+            <div class="slick-silde">
+                <div class="mainbox">
+                    <div class="mainback3"></div>
+                    <div class="main_content">
+                        <div class="textbox">
+                            <ul class="txt1">
+                                <li>콘서트홀</li>
+                                <li>신창용 피아노 리사이틀 - Fantasie</li>
+                                <li>2023.05.30(화) 19:30</li>
+                            </ul>
+                            <p>
+                                모차르트를 사랑한 슈베르트, 슈베르트의 가곡과 모차르트의 작품을 편곡한 리스트.<br />
+                                남다른 깊이와 더불어 전통적 형식을 자랑하는 작곡가들의 작품을 '판타지(Fantasie)'라는<br />
+                                연결된 스토리로 담아 힘있는 드라마와 서정성을 관객들에게 선보인다.
+                            </p>
+                        </div>
+                        <div class="post_img">
+                            <p><a href="javascript:void(0)"><img src="img/m3.gif" alt="신창용 피아노 리사이틀 - Fantasie"></a></p>
+                        </div>
+                    </div>
+                    <div class="mainbottom"></div>
+                </div>
+            </div>
+            <div class="slick-silde">
+                <div class="mainbox">
+                    <div class="mainback4"></div>
+                    <div class="main_content">
+                        <div class="textbox">
+                            <ul class="txt1">
+                                <li>오페라극장, 자유소극장, 음악분수앞</li>
+                                <li>2023 제14회 대한민국 오페라 페스티벌</li>
+                                <li>2023.05.19(금)~06.25(일)</li>
+                            </ul>
+                            <p>
+                                2023년 5월, 제14회 대한민국오페라페스티벌의 화려한 막이 열립니다.<br />
+                                올해는 처음으로 서울 뿐만 아니라 지역에서도 대한민국오페라페스티벌을 만나실 수 있습니다.<br />
+                                &lt;페스티벌 축하 오프닝 갈라 콘서트&gt;도 롯데콘서트홀에서 개최하여 다양한 관객과 만나고자 합니다.
+                            </p>
+                        </div>
+                        <div class="post_img">
+                            <p><a href="javascript:void(0)"><img src="img/m4.gif" alt="2023 제14회 대한민국 오페라 페스티벌"></a></p>
+                        </div>
+                    </div>
+                    <div class="mainbottom"></div>
+                </div>
+            </div>
+            <div class="slick-silde">
+                <div class="mainbox">
+                    <div class="mainback5"></div>
+                    <div class="main_content">
+                        <div class="textbox">
+                            <ul class="txt1">
+                                <li>콘서트홀</li>
+                                <li>Romantic Inspiration Series by '강릉'</li>
+                                <li>2023.05.26(금) 19:30</li>
+                            </ul>
+                            <p>
+                                ‘Romantic Inspiration(낭만적 감흥) Series’, 그들의 끊임없는 열정으로 가슴 깊이 다가오는 합창음악의 정수!<br />
+                                이번 공연은 낭만주의 작곡가들의 순수 합창음악과 다채로운 음악적 색채와 활력으로 가득한<br />
+                                푸치니의 Messa di Gloria를 통하여 아름다운 하모니로 뜨거운 감동을 선사하고자 한다.
+                            </p>
+                        </div>
+                        <div class="post_img">
+                            <p><a href="javascript:void(0)"><img src="img/m5.gif"
+                                        alt="Romantic Inspiration Series by '강릉'"></a></p>
+                        </div>
+                    </div>
+                    <div class="mainbottom"></div>
+                </div>
+            </div>
+            <div class="slick-silde">
+                <div class="mainbox">
+                    <div class="mainback6"></div>
+                    <div class="main_content">
+                        <div class="textbox">
+                            <ul class="txt1">
+                                <li>콘서트홀</li>
+                                <li>루돌프 부흐빈더 베토벤 피아노 소나타 전곡</li>
+                                <li>2023.06.28(수) ~ 07.09(일)</li>
+                            </ul>
+                            <p>
+                                베토벤 피아노 소나타 전국 투어인 &lt;부흐빈더 &amp; 베토벤&gt; 을 통해 <br />
+                                수많은 애호가들의 가슴을 떨리게 한 루돌프 부흐빈더.<br />
+                                ‘현존 최고의 베토벤 해석 권위자’, ‘베토벤의 현신’에 이르기까지 화려한 수식어를 몰고 다니는 <br />
+                                세계적인 베토벤 스페셜리스트로 알려진 부흐빈더가 무려 7일 간의 베토벤 대장정으로 다시 한국 관객을 찾는다
+                            </p>
+                        </div>
+                        <div class="post_img">
+                            <p><a href="javascript:void(0)"><img src="img/m6.gif" alt="루돌프 부흐빈더 베토벤 피아노 소나타 전곡"></a></p>
+                        </div>
+                    </div>
+                    <div class="mainbottom"></div>
+                </div>
+            </div>
+            <div class="slick-silde">
+                <div class="mainbox">
+                    <div class="mainback7"></div>
+                    <div class="main_content">
+                        <div class="textbox">
+                            <ul class="txt1">
+                                <li>콘서트홀</li>
+                                <li>2023 서울시향 마르쿠스 슈텐츠과 조슈아벨 ①,②</li>
+                                <li>2023.05.18(목) ~ 05.19(금) 20:00</li>
+                            </ul>
+                        </div>
+                        <div class="post_img">
+                            <p><a href="javascript:void(0)"><img src="img/m7.gif" alt="2023 서울시향 마르쿠스 슈텐츠과 조슈아벨①,②"></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mainbottom"></div>
+                </div>
+            </div>
+            <div class="slick-silde">
+                <div class="mainbox">
+                    <div class="mainback8"></div>
+                    <div class="main_content">
+                        <div class="textbox">
+                            <ul class="txt1">
+                                <li>콘서트홀</li>
+                                <li>한화와 함께하는 2023 교향악축제</li>
+                                <li>2023.06.01(목) ~ 06.25(일)</li>
+                            </ul>
+                        </div>
+                        <div class="post_img">
+                            <p><a href="javascript:void(0)"><img src="img/m8.gif" alt="한화와 함께하는 2023 교향악축제"></a></p>
+                        </div>
+                    </div>
+                    <div class="mainbottom"></div>
+                </div>
+            </div>
+            <div class="slick-silde">
+                <div class="mainbox">
+                    <div class="mainback9"></div>
+                    <div class="main_content">
+                        <div class="textbox">
+                            <ul class="txt1">
+                                <li>콘서트홀</li>
+                                <li>디스커버 : 로맨틱 피아니즘</li>
+                                <li>2023.05.28(일) 17:00</li>
+                            </ul>
+                            <p>
+                                2019년 첫 내한 당시 국내 관객들에게 큰 충격을 선사한 콘스탄틴 에밀리아노프<br />
+                                당시 주목받는 차세대 피아니스트로 거침없고 화려한 연주를 선보였던 그가<br />
+                                한층 더 성숙한 모습으로 차이콥스키와 라흐마니노프의 피아노 협주곡을 선보인다.
+                            </p>
+                        </div>
+                        <div class="post_img">
+                            <p><a href="javascript:void(0)"><img src="img/m9.gif" alt="디스커버 : 로맨틱 피아니즘"></a></p>
+                        </div>
+                    </div>
+                    <div class="mainbottom"></div>
+                </div>
+            </div>
+            <div class="slick-silde">
+                <div class="mainbox">
+                    <div class="mainback10"></div>
+                    <div class="main_content">
+                        <div class="textbox">
+                            <ul class="txt1">
+                                <li>콘서트홀</li>
+                                <li>필리프 헤레베허 &amp; 샹젤리제 오케스트라</li>
+                                <li>2023.05.17(수) 19:30</li>
+                            </ul>
+                            <p>
+                                2006년 바흐 ‘b단조 미사’, 2013년 모차르트 ‘레퀴엠’, 2017년 베토벤 교향곡으로<br />
+                                명불허전의 연주를 선보였던 고음악의 대가 필리프 헤레베허가 6년만에 내한한다.<br />
+                                2023년 5월 17일 예술의전당 콘서트홀과 20일 부천아트센터에서 열리는 이 공연에는 <br /> 헤레베허가 이끌고 있는 샹젤리제 오케스트라가 함께 한다.
+                            </p>
+                        </div>
+                        <div class="post_img">
+                            <p><a href="javascript:void(0)"><img src="img/m10.gif" alt="필리프 헤레베허 &amp; 샹젤리제 오케스트라"></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mainbottom"></div>
+                </div>
+            </div>
+        </div> <!-- container 끝 -->
+        <div class="main_sub">
+            <div class="slick-silde">
+                <a href="javascript:void(0)"><img src="img/m1.gif" alt="오셀로"></a>
+            </div>
+            <div class="slick-silde">
+                <a href="javascript:void(0)"><img src="img/m2.gif" alt="테스트코레오그라피"></a>
+            </div>
+            <div class="slick-silde">
+                <a href="javascript:void(0)"><img src="img/m3.gif" alt="신창용 피아노 리사이틀 - Fantasie"></a>
+            </div>
+            <div class="slick-silde">
+                <a href="javascript:void(0)"><img src="img/m4.gif" alt="2023 제14회 대한민국 오페라 페스티벌"></a>
+            </div>
+            <div class="slick-silde">
+                <a href="javascript:void(0)"><img src="img/m5.gif" alt="Romantic Inspiration Series by '강릉'"></a>
+            </div>
+            <div class="slick-silde">
+                <a href="javascript:void(0)"><img src="img/m6.gif" alt="루돌프 부흐빈더 베토벤 피아노 소나타 전곡"></a>
+            </div>
+            <div class="slick-silde">
+                <a href="javascript:void(0)"><img src="img/m7.gif" alt="2023 서울시향 마르쿠스 슈텐츠과 조슈아벨①,②"></a>
+            </div>
+            <div class="slick-silde">
+                <a href="javascript:void(0)"><img src="img/m8.gif" alt="한화와 함께하는 2023 교향악축제"></a>
+            </div>
+            <div class="slick-silde">
+                <a href="javascript:void(0)"><img src="img/m9.gif" alt="디스커버 : 로맨틱 피아니즘"></a>
+            </div>
+            <div class="slick-silde">
+                <a href="javascript:void(0)"><img src="img/m10.gif" alt="필리프 헤레베허 &amp; 샹젤리제 오케스트라 "></a>
+            </div>
+        </div>
+    </section>
+    <section id="navi">
+        <h3>예술이 숨쉬는 문화공간</h3>
+        <h1>문화예술과 소통하는 환희의 공간 예술의전당</h1>
+        <ul class="icon_box">
+            <li>
+                <a href="javascript:void(0)"><img src="img/tickets_W.png" alt="공연/전시"><span>공연/전시</span></a>
+            </li>
+            <li>
+                <a href="javascript:void(0)"><img src="img/building.png" alt="대관문의"><span>대관문의</span></a>
+
+            </li>
+            <li>
+                <a href="javascript:void(0)"><img src="img/parking_W.png" alt="교통/주차"><span>교통/주차</span></a>
+
+            </li>
+            <li>
+                <a href="javascript:void(0)"><img src="img/tone_W.png" alt="음악분수"><span>음악분수</span></a>
+
+            </li>
+            <li>
+                <a href="javascript:void(0)"><img src="img/news_W.png" alt="보도자료"><span>보도자료</span></a>
+
+            </li>
+            <li>
+                <a href="javascript:void(0)"><img src="img/my_W.png" alt="마이페이지"><span>마이페이지</span></a>
+
+            </li>
+            <li>
+                <a href="javascript:void(0)"><img src="img/lost_W.png" alt="유실물"><span>유실물</span></a>
+
+            </li>
+            <li>
+                <a href="javascript:void(0)"><img src="img/chat_W.png" alt="1:1문의"><span>1:1문의</span></a>
+
+            </li>
+        </ul>
+    </section>
+    <section id="concert_list">
+        <div class="tab">
+            <ul class="tab_box">
+                <li><a href="javascript:void(0)">공연</a></li>
+                <li><a href="javascript:void(0)">음악</a></li>
+                <li><a href="javascript:void(0)">전시</a></li>
+                <li><a href="javascript:void(0)">강좌</a></li>
+            </ul>
+        </div>
+        <div class="concert_slickbox">
+            <div class="concert_left">
+                <div>
+                    <a href="javascript:void(0)"><img src="img/sm1.gif" alt="Rachmaninoff Series"></a>
+                    <ul class="txt2">
+                        <li class="color_g">음악</li>
+                        <li>Rachmaninoff</li>
+                        <li>Series</li>
+                        <li></li>
+                        <li>앞으로가 더욱더 기대되는 여섯 명의 피아니스트가<br>단 100명의 관객만을 위해 선보이는 무대!</li>
+                        <ul>
+                            <li>07.07(금) ~ 12.28(목) 19:30</li>
+                            <li>인춘아트홀</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div>
+                    <a href="javascript:void(0)"><img src="img/sm2.gif" alt="루체른 심포니"></a>
+                    <ul class="txt2">
+                        <li class="color_g">음악</li>
+                        <li>LUZERNER</li>
+                        <li>SINFONIEORCHESTER</li>
+                        <li>예술의전당 공식협력사 빈체로 추천공연</li>
+                        <li>사람의 마음을 움직이는 살아있는 음악</li>
+                        <ul>
+                            <li>06.27(화) &amp; 07.02(일) 17:00</li>
+                            <li>콘서트홀</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div>
+                    <a href="javascript:void(0)"><img src="img/sm3.gif" alt="백희나 그림책"></a>
+                    <ul class="txt2 txt3">
+                        <li class="color_b">전시</li>
+                        <li> 백희나 그림책</li>
+                        <li></li>
+                        <li>30주년 기념 특별전</li>
+                        <li>책에서 시작된 백희나의 판타지 세계를<br> '입체적'으로 만나다!</li>
+                        <ul>
+                            <li>06.22(목) ~ 10.08(일)</li>
+                            <li>한가람 디자인 미술관</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div>
+                    <a href="javascript:void(0)"><img src="img/sm4.gif" alt="Emerson String Quartet"></a>
+                    <ul class="txt2">
+                        <li class="color_r">공연</li>
+                        <li>Emerson String Quartet</li>
+                        <li>Last Dance</li>
+                        <li>최고의 실내악단</li>
+                        <li>에머슨 스트링 콰르텟이 선사하는 마지막 공연</li>
+                        <ul>
+                            <li>05.27(토) 17:00</li>
+                            <li>콘서트홀</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div>
+                    <a href="javascript:void(0)"><img src="img/sm5.gif" alt="그리움 앙상블"></a>
+                    <ul class="txt2 txt3">
+                        <li class="color_g">음악</li>
+                        <li>그리움 앙상블</li>
+                        <li>G.rium Ensemble</li>
+                        <li>국내 정상급 연주자 6인</li>
+                        <li>세상에 따뜻한 음악을 전달하고 있는 그리움 앙상들이<br> 예술의전당 30주년 특별음악회를 찾아온다.</li>
+                        <ul>
+                            <li>05.31(수) 19:30</li>
+                            <li>IBK챔버홀</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div>
+                    <a href="javascript:void(0)"><img src="img/sm6.gif" alt="Raoul Dufy"></a>
+                    <ul class="txt2">
+                        <li class="color_b">전시</li>
+                        <li>Raoul Dufy</li>
+                        <li>Colorful Symphony</li>
+                        <li>라울 뒤피 : 색채의 선율</li>
+                        <li>삶의 기쁨을 그려낸 20세기 미울싀 거장<br> 라울 뒤피의 첫번째 대형 회고전</li>
+                        <ul>
+                            <li>05.02(화) ~ 09.10(일)</li>
+                            <li>한가람 미술관</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div>
+                    <a href="javascript:void(0)"><img src="img/sm7.gif" alt="LuxemBour"></a>
+                    <ul class="txt2">
+                        <li class="color_g">음악</li>
+                        <li>LuxemBourg</li>
+                        <li>PhilHarmonique</li>
+                        <li>20년 만의 내한</li>
+                        <li>룩셈부르크 필하모닉이 2023년 첫 내한에 이어<br> 두 번째 내한을 갖는다.</li>
+                        <ul>
+                            <li>05.25(목) 19:30</li>
+                            <li>콘서트홀</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div>
+                    <a href="javascript:void(0)"><img src="img/sm8.png" alt="제20회 대한민국동양서예대전"></a>
+                    <ul class="txt2 txt3">
+                        <li class="color_b">전시</li>
+                        <li>제20회 대한민국동양서예대전</li>
+                        <li></li>
+                        <li>韓· 中· 日 서예초대작가전</li>
+                        <li>
+                            문화경제 시대의 중추적 역할을 담당 할<br> 우수한 서예인의 발굴과 함께
+                            전통서예를 계승 발전시켜<br> 한자문화권과의 새로운 서예사를 개척하기 위해
+                        </li>
+                        <ul>
+                            <li>05.31(수) ~ 06.10(토)</li>
+                            <li>서울서예박물관 제1전시실</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div>
+                    <a href="javascript:void(0)"><img src="img/sm9.gif" alt="최수열의 밤9시 즈음에"></a>
+                    <ul class="txt2 txt3">
+                        <li class="color_r">공연</li>
+                        <li>최수열의 밤9시 즈음에</li>
+                        <li></li>
+                        <li>예술의전당 전관 개관 30주년 특별음악회</li>
+                        <li>
+                            현대음악은 어렵다는 고정관념에서 탈피할 수 있는<br> 프로그램으로 구성되어,
+                            현재를 사는 동시대의 음악인<br> 현대음악의 매력을 전하는 시간이 될 것이다.
+                        </li>
+                        <ul>
+                            <li>07.06(목) 21:00</li>
+                            <li>리사이틀홀</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div>
+                    <a href="javascript:void(0)"><img src="img/sm10.gif" alt="볼로냐 일러스트 원화전 56th"></a>
+                    <ul class="txt2 txt3">
+                        <li class="color_b">전시</li>
+                        <li>볼로냐 일러스트 원화전 56th</li>
+                        <li>A Small Good Thing</li>
+                        <li>: 내 손 안의 78가지 작은 행복</li>
+                        <li>"2022년 볼로냐 일러스트 원화전 월드투어전시를 한국에서 만나요!"</li>
+                        <ul>
+                            <li>04.13(목) ~ 06.25(일)</li>
+                            <li>한가람미술관 제7전시실</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div>
+                    <a href="javascript:void(0)"><img src="img/sm11.gif" alt="라울 뒤피 : 색채의 선율 전시 연계 원데이 클래스"></a>
+                    <ul class="txt2 txt3">
+                        <li class="color_p">강좌</li>
+                        <li>전시 연계 원데이 클래스</li>
+                        <li></li>
+                        <li>라울 뒤피 : 색채의 선율</li>
+                        <li>강좌별 세부 내용은 홈페이지를 통해 확인해 주시기 바랍니다.</li>
+                        <ul>
+                            <li>05.26(금) ~ 07.21(금)</li>
+                            <li>오페라하우스 4층 컨퍼런스홀</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div>
+                    <a href="javascript:void(0)"><img src="img/sm12.gif" alt="룸711"></a>
+                    <ul class="txt2 txt3">
+                        <li class="color_b">전시</li>
+                        <li>룸711</li>
+                        <li></li>
+                        <li>루브르에서 서울까지</li>
+                        <li>이번 제우스 개인전은 여러분들께 국내에서는 쉽게 느껴보지 못한 <br>특별한 감동과 새로운 경험을 선사할 것 입니다.</li>
+                        <ul>
+                            <li>04.14(금) ~ 07.06(목)</li>
+                            <li>한가람미술관 제3전시실,제4전시실</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div>
+                    <a href="javascript:void(0)"><img src="img/sm13.gif" alt="인문·감상 아카데미 여름특강"></a>
+                    <ul class="txt2 txt3">
+                        <li class="color_p">강좌</li>
+                        <li>2023 예술의전당</li>
+                        <li></li>
+                        <li>인문·감상 아카데미 여름특강</li>
+                        <li>강좌별 세부 내용은 홈페이지를 통해 확인해 주시기 바랍니다.</li>
+                        <ul>
+                            <li>05.26(금) ~ 07.03(월)</li>
+                            <li>오페라하우스 4층 컨퍼런스홀</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="concert_right">
+                <div>
+                    <a href="javascript:void(0)"><img src="img/sm1.gif" alt="Rachmaninoff Series"></a>
+                </div>
+                <div>
+                    <a href="javascript:void(0)"><img src="img/sm2.gif" alt="루체른 심포니"></a>
+                </div>
+                <div>
+                    <a href="javascript:void(0)"><img src="img/sm3.gif" alt="백희나 그림책"></a>
+                </div>
+                <div>
+                    <a href="javascript:void(0)"><img src="img/sm4.gif" alt="Emerson String Quartet"></a>
+                </div>
+                <div>
+                    <a href="javascript:void(0)"><img src="img/sm5.gif" alt="그리움 앙상블"></a>
+                </div>
+                <div>
+                    <a href="javascript:void(0)"><img src="img/sm6.gif" alt="Raoul Dufy"></a>
+                </div>
+                <div>
+                    <a href="javascript:void(0)"><img src="img/sm7.gif" alt="LuxemBour"></a>
+                </div>
+                <div>
+                    <a href="javascript:void(0)"><img src="img/sm8.png" alt="제20회 대한민국동양서예대전"></a>
+                </div>
+                <div>
+                    <a href="javascript:void(0)"><img src="img/sm9.gif" alt="최수열의 밤9시 즈음에"></a>
+                </div>
+                <div>
+                    <a href="javascript:void(0)"><img src="img/sm10.gif" alt="볼로냐 일러스트 원화전 56th"></a>
+                </div>
+                <div>
+                    <a href="javascript:void(0)"><img src="img/sm11.gif" alt="라울 뒤피 : 색채의 선율 전시 연계 원데이 클래스"></a>
+                </div>
+                <div>
+                    <a href="javascript:void(0)"><img src="img/sm12.gif" alt="룸711"></a>
+                </div>
+                <div>
+                    <a href="javascript:void(0)"><img src="img/sm13.gif" alt="인문·감상 아카데미 여름특강"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="week">
+        <h1>주간 공연 일정</h1>
+        <!-- 왼쪽으로 움직이는 글자 -->
+        <div class="wrap-left">
+            <div class="rolling-left">
+                <ul>
+                    <li>
+                        <img src="img/SEOULArtsCenter.png" alt="SeoulArtsCenter글자">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 위로 올라가는 이미지 -->
+        <div class="wrap-up">
+            <div class="rolling-up">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/wk1.gif" alt="미술관 옆 런던 클래식&시네마 여행">
+                            <div class="ani_box">
+                                <p>
+                                    미술관 옆 런던 클래식&amp;<br>시네마 여행
+                                    <span>2023.06.18(일) 14:00<br>IBK챔버홀</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/wk2.gif" alt="더사운드스테이지앙상블 콘서트">
+                            <div class="ani_box">
+                                <p>
+                                    더사운드스테이지앙상블 콘서트
+                                    <span>2023.06.18(일) 14:00<br>리사이틀홀</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/wk3.gif" alt="기타리스트 백주나 임홍재 이석우 3인 콘서트">
+                            <div class="ani_box">
+                                <p>
+                                    기타리스트 백주나<br>임홍재 이석우 3인 콘서트
+                                    <span>2023.06.18(일) 20:00<br>리사이틀홀</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/wk4.gif" alt="한화와 함께하는 2023 교향악축제">
+                            <div class="ani_box">
+                                <p>
+                                    한화와 함께하는<br> 2023 교향악축제
+                                    <span>2023.06 전체일정 참고<br>콘서트홀</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/wk5.gif" alt="(사)프렌즈오브뮤직 제27회 정기연주회">
+                            <div class="ani_box">
+                                <p>
+                                    (사)프렌즈오브뮤직<br>제27회 정기연주회
+                                    <span>2023.06.20(화) 19:30<br>IBK챔버홀</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/wk6.gif" alt="바리톤 김보람 독창회">
+                            <div class="ani_box">
+                                <p>
+                                    바리톤 김보람 독창회
+                                    <span>2023.06.20(화) 19:30<br>리사이틀홀</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/wk7.gif" alt="강주이 비올라 독주회">
+                            <div class="ani_box">
+                                <p>
+                                    강주이 비올라 독주회
+                                    <span>2023.06.20(화) 19:30<br>인춘아트홀</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 아래로 내려가는 이미지 -->
+        <div class="wrap-down">
+            <div class="rolling-down">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/wk8.gif" alt="박고운 첼로 리사이틀">
+                            <div class="ani_box">
+                                <p>
+                                    박고운 첼로 리사이틀
+                                    <span>2023.06.21(수) 19:30<br>인춘아트홀</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/wk9.gif" alt="제15회 세일 한국가곡 콩쿠르 본선연주회">
+                            <div class="ani_box">
+                                <p>
+                                    제15회 세일 한국가곡<br> 콩쿠르 본선연주회
+                                    <span>2023.06.22(목) 19:30<br>IBK챔버홀</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/wk10.gif" alt="송은주 클라비코드&amp;하프시코드 리사이틀">
+                            <div class="ani_box">
+                                <p>
+                                    송은주 클라비코드&amp;<br>하프시코드 리사이틀
+                                    <span>2023.06.22(목) 19:30<br>리사이틀홀</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/wk11.gif" alt="유터피 윈즈 제17회 정기연주회">
+                            <div class="ani_box">
+                                <p>
+                                    유터피 윈즈 제17회 정기연주회
+                                    <span>2023.06.22(목) 19:30<br>인춘아트홀</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/wk12.gif" alt="KT와 함꼐하는 예술의전당 마음을 담은 클래식(6월)">
+                            <div class="ani_box">
+                                <p>
+                                    KT와 함꼐하는 예술의전당<br>마음을 담은 클래식(6월)
+                                    <span>2023.06.23(금) 11:00<br>콘서트홀</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/wk13.png" alt="선율 피아노 리사이틀">
+                            <div class="ani_box">
+                                <p>
+                                    선율 피아노 리사이틀
+                                    <span>2023.06.23(금) 19:30<br>리사이틀홀</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/wk14.gif" alt="장우리 첼로 독주회">
+                            <div class="ani_box">
+                                <p>
+                                    장우리 첼로 독주회
+                                    <span>2023.06.24(토) 20:00<br>리사이틀홀</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="content">
+        <div class="videobox">
+            <div class="videoContainer">
+                <a href="javascript:void(0)">
+                    <iframe width="500" height="650"
+                        src="https://www.youtube.com/embed/6AObxjTd9xk?autoplay=1&mute=1&controls=0&loop=1&playlist=6AObxjTd9xk"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        fullscreen>
+                    </iframe>
+                </a>
+            </div>
+        </div>
+        <div class="contentbox">
+            <h2 class="t1">
+                <p><a class="on" href="#item1" onclick="return false">공지사항</a></p>
+            </h2>
+            <div id="item1">
+                <div class="list1">
+                    <ul class="cf">
+                        <li><a href="javascript:void(0)">공연장 현장 운영과 관련하여 사과의 말씀드립니다.</a><span>2023.05.11</span></li>
+                        <li><a href="javascript:void(0)">2023 예술의 전당 공연영상제작지원 작품 공모</a><span>2023.05.09</span></li>
+                        <li><a href="javascript:void(0)">2023년도 예술의 전당 여름 음악 축제 참여 연주자 모집</a><span>2023.05.04</span>
+                        </li>
+                        <li><a href="javascript:void(0)">2023 예술의 전당 청년미술상점 7-8월 작가 공모</a><span>2023.05.03</span></li>
+                        <li><a href="javascript:void(0)">2023 예술의 전당 5월 청년미술상점 안내</a><span>2023.05.01</span></li>
+                    </ul>
+                </div>
+            </div>
+            <h2 class="t2">
+                <p><a href="#item2" onclick="return false">티켓오픈</a></p>
+            </h2>
+            <div id="item2">
+                <div class="list1">
+                    <ul class="cf">
+                        <li><a href="javascript:void(0)">디즈니 100주년 기념 콘서트 with 킹스 싱어즈</a><span>티켓오픈일 : 2023.05.25</span>
+                        </li>
+                        <li><a href="javascript:void(0)">KT와 함께하는 예술의 전당 마음을 담은 클래식 (6월)</a><span>티켓오픈일 :
+                                2023.05.23</span></li>
+                        <li><a href="javascript:void(0)">미하일 플레트네프 피아노 리사이틀</a><span>티켓오픈일 : 2023.04.20</span></li>
+                        <li><a href="javascript:void(0)">[2023 대한민국오페라 페스티벌] 빨간 모자와 늑대</a><span>티켓오픈일 :
+                                2023.04.19</span></li>
+                        <li><a href="javascript:void(0)">국립오페라단 정기공연 &lt;일 트로바토레&gt;</a><span>티켓오픈일 : 2023.04.19</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button>more</button>
+        </div>
+    </section>
+    <section id="event">
+        <h1>이벤트</h1>
+        <ul>
+            <li><a href="javascript:void(0)"><img src="img/e1.gif" alt="[골드/블루회원] 룸 711 기대평 이벤트"></a></li>
+            <li><a href="javascript:void(0)"><img src="img/e2.gif" alt="5월 예술의전당 우리카드 캐시백 이벤트"></a></li>
+            <li><a href="javascript:void(0)"><img src="img/e3.gif" alt="5월 예술의전당 우리카드 캐시백 이벤트"></a></li>
+        </ul>
+    </section>
+    <div id="quick">
+        <ul>
+            <li><a href="schedule.html"><img src="img/calendar.png" alt="전체일정"><span>전체일정</span></a></li>
+            <li><a href="javascript:void(0)"><img src="img/calendar_check.png" alt="예매확인/취소"><span>예매확인/취소</span></a>
+            <li><a href="javascript:void(0)"><img src="img/building_B.png" alt="대관문의"><span>대관문의</span></a></li>
+            </li>
+            <li><a href="javascript:void(0)"><img src="img/icon.png" alt="챗봇"><span>챗봇</span></a></li>
+            <li class="top"><a href="javascript:void(0)"><img src="img/top.png" alt="TOP버튼"></a></li>
+        </ul>
+    </div>
+    <footer id="footer">
+        <div class="foot">
+            <div class="foot_left">
+                <h1 class="foot_logo"><img src="img/logo.png" alt="logo"></h1>
+                <div class="foot_box">
+                    <div>
+                        <p>C/S</p>
+                        <p>02-580-1300</p>
+                        <ul>
+                            <li>월 : 09:00~18:00</li>
+                            <li>화 - 일 : 09:00~20:00 (연중무휴)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>편의 서비스</p>
+                        <ul>
+                            <li><a href="javascript:void(0)">공간별 편의서비스</a></li>
+                            <li><a href="javascript:void(0)">전시장 편의서비스</a></li>
+                            <li><a href="javascript:void(0)">장애인 국가유공자</a></li>
+                            <li><a href="javascript:void(0)">이용안내</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="foot_right">
+                <ul>
+                    <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+                    <li><a href="javascript:void(0)">이용약관</a></li>
+                    <li><a href="javascript:void(0)">사이트맵</a></li>
+                    <li><a href="javascript:void(0)">정보공개</a></li>
+                    <li><a href="javascript:void(0)">오시는길 · 주차안내</a></li>
+                </ul>
+                <div class="foot_txt">
+                    <address>(우) 06757 서울시 서초구 남부순환로 2406 예술의전당</address>
+                    <p>copyrightⓒ2020 Seoul Arts Center. All rights Reserved.</p>
+                </div>
+                <ul>
+                    <li>대표자 장형준</li>
+                    <li>사업자등록번호 214-82-00264</li>
+                    <li>통신판매업신고 서초 제 0706호</li>
+                </ul>
+                <ul class="sns">
+                    <li>
+                        <a href="https://www.facebook.com/SeoulArtsCenter.Korea"><img src="img/sns_facebook.png"
+                                alt="facebook"></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/I_Love_SAC"><img src="img/sns_twitter.png" alt="twitter"></a></li>
+                    <li>
+                        <a href="https://www.instagram.com/seoul_arts_center/"><img src="img/sns_instargram.png"
+                                alt="instargram"></a>
+                    </li>
+                    <li>
+                        <a href="https://blog.naver.com/i_love_sac"><img src="img/sns_blog.png" alt="blog"></a>
+                    </li>
+                    <li>
+                        <a href="https://m.post.naver.com/i_love_sac?memberNo=33166497"><img src="img/sns_naverPOST.png"
+                                alt="naverPOST"></a>
+                    </li>
+                    <li>
+                        <a href="https://tv.naver.com/seoulartscenter"><img src="img/sns_naverTV.png" alt="naverTV"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCUn8h6aG6rCM1zvXKIuNpVQ"><img
+                                src="img/sns_youtube.png" alt="youtube"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.podbbang.com/channels/5932"><img src="img/sns_podbbang.png"
+                                alt="podbbang"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

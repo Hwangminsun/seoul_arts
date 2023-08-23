@@ -1,0 +1,739 @@
+@charset "utf-8";
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* header 시작 */
+#header {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 1px solid #202020;
+    font-family: 'Pretendard-Regular';
+}
+
+.inner {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+}
+
+.inner h1 {
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+.inner h1 img {
+    width: 150px;
+}
+
+.nav1 {
+    position: absolute;
+    top: 25px;
+    right: 110px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 70px);
+    grid-column-gap: 15px;
+}
+
+.nav1 li {
+    font-size: 0.9rem;
+    position: relative;
+    z-index: 2;
+}
+
+.nav1 li:hover {
+    font-weight: bold;
+}
+
+.nav1 li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #ED1A3B;
+    transition: 0.45s;
+}
+
+.nav1 li:hover::after,
+.nav1 li:hover.on::after {
+    width: 70px;
+}
+
+.icon {
+    position: absolute;
+    height: 30px;
+    top: 25px;
+    right: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.icon li:nth-child(2) img {
+    width: 23px;
+    line-height: 30px;
+}
+
+.icon li:nth-child(1) img {
+    width: 30px;
+}
+
+.menu {
+    width: 100%;
+    top: 0;
+}
+
+.menubox {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.nav2 {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.nav2>li {
+    width: 20%;
+    height: 80px;
+    line-height: 80px;
+    font-size: 1.1rem;
+    z-index: 11;
+    letter-spacing: 1px;
+}
+
+.nav2>li>a:hover {
+    font-weight: bold;
+}
+
+.nav2>li>a {
+    display: block;
+}
+
+.sub {
+    display: none;
+    /* 서브메뉴 보이게 */
+}
+
+.sub li {
+    height: 40px;
+    line-height: 40px;
+}
+
+.sub li:hover {
+    background: #ED1A3B;
+    opacity: 0.8;
+}
+
+.sub li a {
+    display: block;
+    font-size: 0.9rem;
+}
+
+/* fullmenu 배경입니다. */
+.subbox {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 580px;
+    background: #202020;
+    z-index: 10;
+    display: none;
+}
+
+/* header 끝 */
+
+/* search_box 시작 */
+.search_box {
+    position: absolute;
+    width: 100%;
+    padding: 3rem 0 5rem 0;
+    background-color: #4B4949;
+    opacity: 0.9;
+    z-index: 1;
+    font-family: 'Pretendard-Regular';
+    display: none;
+    /* 검색박스 보이게 */
+}
+
+.search_box1 {
+    position: relative;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.search_box1 div {
+    width: 100%;
+}
+
+.search_box1 div input {
+    width: 100%;
+    height: 35px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #ccc;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1.5px solid #ccc;
+    font-family: 'Pretendard-Regular';
+}
+
+.search_box1>div>a {
+    position: absolute;
+}
+
+.search_box1 div img {
+    width: 30px;
+}
+
+.tag {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.tag ul li {
+    position: relative;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+}
+
+.tag ul li a {
+    color: #ccc;
+}
+
+.tag ul li a span {
+    display: block;
+}
+
+.tag span::after,
+.tag span::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    width: 20px;
+    height: 2px;
+    background: #ccc;
+}
+
+.tag span::before {
+    transform: rotate(-45deg);
+    opacity: 1;
+}
+
+.tag span::after {
+    transform: rotate(45deg);
+    opacity: 1;
+}
+
+/* search_box 끝 */
+
+/* concert_list 시작 */
+#concert_list {
+    width: 75%;
+    margin: 5rem auto 10rem;
+
+}
+
+#concert_list div a {
+    display: block;
+    margin: 0 15px;
+}
+
+#concert_list img {
+    width: 100%;
+}
+
+/* concert_list button */
+#concert_list>button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    outline: none;
+    background: none;
+    z-index: 5;
+    cursor: pointer;
+}
+
+#concert_list button.slick-prev {
+    left: -50px;
+    font-size: 0;
+}
+
+#concert_list button.slick-prev::before {
+    content: "";
+    background-image: url(../img/arrow_L.png);
+    background-size: 100%;
+    width: 23px;
+    height: 40px;
+    display: block;
+}
+
+#concert_list button.slick-next {
+    right: -50px;
+    font-size: 0;
+}
+
+#concert_list button.slick-next::before {
+    content: "";
+    background-image: url(../img/arrow_R.png);
+    background-size: 100%;
+    width: 23px;
+    height: 40px;
+    display: block;
+}
+
+/* concert_list 끝 */
+
+/* schedule_box 시작 */
+#schedule_box {
+    width: 75%;
+    margin: 0 auto 15rem;
+    color: #fff;
+    text-align: center;
+    font-family: 'Pretendard-Regular';
+}
+
+#schedule_box>h3 {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: #666;
+    letter-spacing: 3px;
+}
+
+#schedule_box>h1 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    letter-spacing: 5px;
+}
+
+.content .print {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0;
+    color: #666;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.content .print img {
+    width: 35px;
+    height: 35px;
+    margin-top: 12px;
+}
+
+.content {
+    position: relative;
+    margin-top: 6rem;
+}
+
+.content h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    letter-spacing: 3px;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    width: 150px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.content h2:nth-child(4) {
+    left: 170px;
+}
+
+.content h2:nth-child(6) {
+    left: 340px;
+}
+
+.tab_on {
+    content: "";
+    width: 150px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 30px;
+    border: 2px solid #ED1A3B;
+    font-weight: bold;
+}
+
+.item_list {
+    padding-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content #item2,
+.content #item3 {
+    display: none;
+
+}
+
+#calendar {
+    width: 55%;
+}
+
+#calendar table {
+    width: 100%;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 20px;
+}
+
+#calendar table thead th {
+    border-bottom: 1px solid #333;
+    font-size: 1.2rem;
+    height: 80px;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+#calendar table thead th::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 35%;
+    width: 20px;
+    height: 20px;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+#calendar table thead th::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 35%;
+    width: 20px;
+    height: 20px;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    transform: rotate(-45deg);
+    cursor: pointer;
+}
+
+#calendar table tbody th {
+    height: 70px;
+    letter-spacing: 3px;
+}
+
+.red {
+    color: #ED1A3B;
+}
+
+.blue {
+    color: #0AB5FF;
+}
+
+#calendar table tbody td {
+    width: 14.28%;
+    height: 75px;
+    vertical-align: top;
+    padding-top: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.day::after {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #ED1A3B;
+    border-radius: 50px;
+    z-index: -1;
+}
+
+.txet_list {
+    width: 40%;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.txet_list div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #333;
+}
+
+.txet_list div p {
+    height: 80px;
+    line-height: 80px;
+}
+
+.txet_list div p:nth-child(1) {
+    color: #666;
+}
+
+.txet_list div p:nth-child(2) {
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.txet_list ul li {
+    position: relative;
+    border-bottom: 1px solid #333;
+    width: 100%;
+    height: 60px;
+
+}
+
+.txet_list ul li a {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    line-height: 60px;
+}
+
+.txet_list ul li a p {
+    width: 80px;
+    height: 25px;
+    line-height: 22px;
+    margin-top: 17px;
+    font-size: 0.8rem;
+}
+
+.txet_list ul li a span:nth-child(2) {
+    display: block;
+    width: 70%;
+    text-align: left;
+}
+
+.txet_list ul li a span img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 35px;
+}
+
+.txet_list ul li a span:nth-child(3) {
+    font-size: 0.8rem;
+    color: #929292;
+}
+
+.txet_list .display_box li a p {
+    width: 100px;
+}
+
+.txet_list .display_box li a span:nth-child(2) {
+    width: 60%;
+}
+
+.txet_list .display_box li a span img {
+    right: 80px;
+}
+
+/* P 컬러 클래스 */
+.color_b {
+    border: 2px solid #045A98;
+    color: #045A98;
+    background: #c3dff3;
+}
+
+.color_r {
+    border: 2px solid #9E557D;
+    color: #9E557D;
+    background: #ece5e5;
+}
+
+.color_g {
+    border: 2px solid #488034;
+    color: #488034;
+    background: #f9fff6;
+}
+
+.color_p {
+    border: 2px solid #A177F9;
+    color: #A177F9;
+    background: #fff4fb;
+}
+
+.color_o {
+    border: 2px solid #E9B06D;
+    color: #E9B06D;
+    background: #fbefd9;
+}
+
+#quick {
+    position: absolute;
+    right: 0;
+    top: 80px;
+    bottom: 0;
+    width: 65px;
+    height: 450px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px 0;
+}
+
+#quick ul {
+    text-align: center;
+}
+
+#quick ul li {
+    margin-bottom: 30px;
+}
+
+#quick ul li span {
+    display: block;
+    color: #111;
+    font-size: 0.7rem;
+    font-family: 'Pretendard-Regular';
+    margin-top: 10px;
+}
+
+#quick ul li:nth-child(2) img,
+#quick ul li:nth-child(3) img,
+#quick ul li:nth-child(5) img {
+    width: 35px;
+}
+
+#quick img {
+    width: 40px;
+}
+
+/* footer 시작 */
+#footer {
+    background: #202020;
+    font-family: 'Pretendard-Regular';
+    padding: 70px 0;
+}
+
+.foot {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot_left {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 25% 60%;
+    grid-column-gap: 15%;
+}
+
+.foot_logo img {
+    width: 100%;
+}
+
+.foot_box {
+    display: grid;
+    grid-template-columns: 50% 40%;
+    grid-column-gap: 10%;
+}
+
+.foot_box div p {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.foot_box div p:nth-child(1) {
+    padding-left: 9px;
+    position: relative;
+}
+
+.foot_box div p:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 3.5px;
+    height: 15px;
+    background-color: #ED1A3B;
+}
+
+.foot_box ul:nth-child(2) li {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.foot_box ul li {
+    color: #fff;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.foot_right ul:nth-child(1) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 0.5fr) 1fr;
+    grid-column-gap: 30px;
+    font-size: 0.9rem;
+    margin-bottom: 2.5rem;
+}
+
+.foot_txt {
+    color: #fff;
+    font-size: 0.9rem;
+    font-size: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.foot_txt address {
+    font-style: normal;
+}
+
+.foot_right {
+    width: 45%;
+}
+
+.foot_right ul:nth-child(3) {
+    display: flex;
+    font-size: 0.75rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.foot_right ul:nth-child(3) li {
+    margin-right: 20px;
+}
+
+.sns {
+    width: 55%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-column-gap: 15px;
+}
+
+.sns img {
+    width: 30px;
+}
+/* quick 끝 */
+
+/* footer 끝 */

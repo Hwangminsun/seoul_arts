@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+.rolling-left.original {
+  animation: rollingleft1 60s linear infinite;
+}
+.rolling-left.clone {
+  animation: rollingleft2 60s linear infinite;
+}
+
+@keyframes rollingleft1 {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-100%); }
+  50.01% { transform: translateX(100%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes rollingleft2 {
+  0% { transition: translateX(0); }
+  100% { transform: translateX(-200%); }
+}
+
+.rolling-down.original-2 {
+  animation: rollingdown1 200s linear infinite;
+}
+.rolling-down.clone-2 {
+  animation: rollingdown2 200s linear infinite;
+}
+
+@keyframes rollingdown1 {
+  100% { transform: translateY(0); }
+  50.01% { transform: translateY(-100%); }
+  50% { transform: translateY(100%); }
+  0% { transform: translateY(0); }
+}
+
+@keyframes rollingdown2 {
+  100% { transition: translateY(0); }
+  0% { transform: translateY(-200%); }
+}
+
+.rolling-up.original-1 {
+  animation: rollingUp1 200s linear infinite;
+}
+.rolling-up.clone-1 {
+  animation: rollingUp2 200s linear infinite;
+}
+
+@keyframes rollingUp1 {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-100%); }
+  50.01% { transform: translateY(100%); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes rollingUp2 {
+  0% { transition: translateY(0); }
+  100% { transform: translateY(-200%); }
+}
+
+
+@keyframes moveLeft {
+  0% { transition: translateX(-40%); }
+  100% { transform: translateX(5%); }
+}

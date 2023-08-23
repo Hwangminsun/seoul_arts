@@ -1,0 +1,620 @@
+@charset "utf-8";
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* header 시작 */
+#header {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 1px solid #202020;
+    font-family: 'Pretendard-Regular';
+}
+
+.inner {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+}
+
+.inner h1 {
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+.inner h1 img {
+    width: 150px;
+}
+
+.nav1 {
+    position: absolute;
+    top: 25px;
+    right: 110px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 70px);
+    grid-column-gap: 15px;
+}
+
+.nav1 li {
+    font-size: 0.9rem;
+    position: relative;
+    z-index: 2;
+}
+
+.nav1 li:hover {
+    font-weight: bold;
+}
+
+.nav1 li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #ED1A3B;
+    transition: 0.45s;
+}
+
+.nav1 li:hover::after,
+.nav1 li:hover.on::after {
+    width: 70px;
+}
+
+.icon {
+    position: absolute;
+    height: 30px;
+    top: 25px;
+    right: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.icon li:nth-child(2) img {
+    width: 23px;
+    line-height: 30px;
+}
+
+.icon li:nth-child(1) img {
+    width: 30px;
+}
+
+.menu {
+    width: 100%;
+    top: 0;
+}
+
+.menubox {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.nav2 {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.nav2>li {
+    width: 20%;
+    height: 80px;
+    line-height: 80px;
+    font-size: 1.1rem;
+    z-index: 11;
+    letter-spacing: 1px;
+}
+
+.nav2>li>a:hover {
+    font-weight: bold;
+}
+
+.nav2>li>a {
+    display: block;
+}
+
+.sub {
+    display: none;
+    /* 서브메뉴 보이게 */
+}
+
+.sub li {
+    height: 40px;
+    line-height: 40px;
+}
+
+.sub li:hover {
+    background: #ED1A3B;
+    opacity: 0.8;
+}
+
+.sub li a {
+    display: block;
+    font-size: 0.9rem;
+}
+
+/* fullmenu 배경입니다. */
+.subbox {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 580px;
+    background: #202020;
+    z-index: 10;
+    display: none;
+}
+
+/* header 끝 */
+
+/* search_box 시작 */
+.search_box {
+    position: absolute;
+    width: 100%;
+    padding: 3rem 0 5rem 0;
+    background-color: #4B4949;
+    opacity: 0.9;
+    z-index: 1;
+    font-family: 'Pretendard-Regular';
+    display: none;
+    /* 검색박스 보이게 */
+}
+
+.search_box1 {
+    position: relative;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.search_box1 div {
+    width: 100%;
+}
+
+.search_box1 div input {
+    width: 100%;
+    height: 35px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #ccc;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1.5px solid #ccc;
+    font-family: 'Pretendard-Regular';
+}
+
+.search_box1>div>a {
+    position: absolute;
+}
+
+.search_box1 div img {
+    width: 30px;
+}
+
+.tag {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.tag ul li {
+    position: relative;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+}
+
+.tag ul li a {
+    color: #ccc;
+}
+
+.tag ul li a span {
+    display: block;
+}
+
+.tag span::after,
+.tag span::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    width: 20px;
+    height: 2px;
+    background: #ccc;
+}
+
+.tag span::before {
+    transform: rotate(-45deg);
+    opacity: 1;
+}
+
+.tag span::after {
+    transform: rotate(45deg);
+    opacity: 1;
+}
+
+/* search_box 끝 */
+
+/* hgroup 시작 */
+.hgroup {
+    border-bottom: 1px solid #ED1A3B;
+    width: 60%;
+    margin: 8rem auto 2rem;
+    color: #fff;
+    letter-spacing: 3px;
+    font-family: 'Pretendard-Regular';
+}
+
+.hgroup h3 {
+    position: relative;
+    width: 170px;
+    margin: 0 auto 5rem;
+    padding-left: 15px;
+    font-size: 1.7rem;
+}
+
+.hgroup h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 3.5px;
+    height: 20px;
+    background-color: #ED1A3B;
+}
+
+.hgroup h4 {
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+    border-bottom: 1px solid #8e8e8e;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.hgroup h5 {
+    padding: 3rem 0 1.5rem;
+    font-size: 1.1rem;
+    font-family: 'Pretendard-Regular';
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+/* container 시작 */
+#container {
+    color: #fff;
+    width: 60%;
+    margin: 3rem auto 4rem;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    font-family: 'Pretendard-Regular';
+}
+
+.wrap>ul>li {
+    display: flex;
+    border-bottom: 1px solid #fff;
+}
+
+.wrap>ul>li:last-child {
+    border-bottom: 0;
+}
+
+.wrap>ul>li:nth-child(1) input,
+.wrap>ul>li:nth-child(2) input,
+.wrap>ul>li:nth-child(4) input {
+    display: block;
+    width: 25%;
+    height: 40px;
+    margin: auto 5px;
+    outline: none;
+    border: 1px solid #fff;
+    background: none;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+#id2 button{
+    display: block;
+    width: 130px;
+    height: 40px;
+    margin: 5px;
+    outline: none;
+    border: 1px solid #ED1A3B;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#id2 button:hover {
+    background: #ED1A3B;
+}
+
+.wrap>ul>li input[type="radio"] {
+    accent-color: #8e8e8e;
+  }
+
+.wrap>ul>li:nth-child(5) input,
+.wrap>ul>li:nth-child(6) input {
+    display: block;
+    width: 50%;
+    height: 40px;
+    margin: auto 5px;
+    outline: none;
+    border: 1px solid #fff;
+    background: none;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.wrap>ul>li:nth-child(7) input,
+.wrap>ul>li:nth-child(8) input {
+    display: block;
+    width: 40%;
+    height: 40px;
+    margin: auto 5px;
+    outline: none;
+    border: 1px solid #fff;
+    background: none;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.wrap li >label {
+    border-right: 1px solid #fff;
+    display: block;
+    width: 20%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.2rem;
+}
+
+.wrap li:last-child >label {
+    border-right: none;
+}
+
+.wrap li>span{
+    width: 75px;
+    height: 40px;
+    line-height: 35px;
+    margin: auto 10px auto 20px;
+}
+
+.wrap li>span input {
+    cursor: pointer;
+}
+
+.wrap li span label {
+    padding-left: 10px;
+}
+
+.text {
+    border-left: 1px solid #fff;
+    padding: 10px 0 20px 20px;
+}
+
+.text p::selection {
+    background: #ED1A3B;
+}
+
+.text p {
+    margin: 15px 0;
+    letter-spacing: 2px;
+}
+
+.text span {
+    display: inline-block;
+    width: 75px;
+    height: 40px;
+    line-height: 35px;
+    margin: auto 20px auto 0;
+}
+
+.text span input[type="radio"] {
+    accent-color: #8e8e8e;
+  }
+
+.text span input {
+    cursor: pointer;
+}
+
+.text ul li {
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+
+.text ul li::selection {
+    background: #ED1A3B;
+}
+
+.button_box {
+    width: 80%;
+    margin: 0 auto 10rem;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: end;
+}
+
+.button_box a {
+    display: block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #ED1A3B;
+    font-size: 0.9rem;
+    background: none;
+    color: #fff;
+    transition: all .3s;
+    margin-left: 10px;
+    font-family: 'Pretendard-Regular';
+}
+
+.button_box a:hover {
+    background: #ED1A3B;
+}
+
+/* quick 시작 */
+#quick {
+    position: absolute;
+    right: 0;
+    top: 80px;
+    bottom: 0;
+    width: 65px;
+    height: 450px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px 0;
+}
+
+#quick ul {
+    text-align: center;
+}
+
+#quick ul li {
+    margin-bottom: 30px;
+}
+
+#quick ul li span {
+    display: block;
+    color: #111;
+    font-size: 0.7rem;
+    font-family: 'Pretendard-Regular';
+    margin-top: 10px;
+}
+
+#quick ul li:nth-child(2) img,
+#quick ul li:nth-child(3) img,
+#quick ul li:nth-child(5) img {
+    width: 35px;
+}
+
+#quick img {
+    width: 40px;
+}
+
+/* quick 끝*/
+
+/* footer 시작 */
+#footer {
+    background: #202020;
+    font-family: 'Pretendard-Regular';
+    padding: 70px 0;
+}
+
+.foot {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot_left {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 25% 60%;
+    grid-column-gap: 15%;
+}
+
+.foot_logo img {
+    width: 100%;
+}
+
+.foot_box {
+    display: grid;
+    grid-template-columns: 50% 40%;
+    grid-column-gap: 10%;
+}
+
+.foot_box div p {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.foot_box div p:nth-child(1) {
+    padding-left: 9px;
+    position: relative;
+}
+
+.foot_box div p:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 3.5px;
+    height: 15px;
+    background-color: #ED1A3B;
+}
+
+.foot_box ul:nth-child(2) li {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.foot_box ul li {
+    color: #fff;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.foot_right ul:nth-child(1) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 0.5fr) 1fr;
+    grid-column-gap: 30px;
+    font-size: 0.9rem;
+    margin-bottom: 2.5rem;
+}
+
+.foot_txt {
+    color: #fff;
+    font-size: 0.9rem;
+    font-size: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.foot_txt address {
+    font-style: normal;
+}
+
+.foot_right {
+    width: 45%;
+}
+
+.foot_right ul:nth-child(3) {
+    display: flex;
+    font-size: 0.75rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.foot_right ul:nth-child(3) li {
+    margin-right: 20px;
+}
+
+.sns {
+    width: 55%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-column-gap: 15px;
+}
+
+.sns img {
+    width: 30px;
+}
+
+/* footer 끝 */

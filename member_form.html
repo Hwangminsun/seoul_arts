@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예술의 전당</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/member_form.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slick.min.js"></script>
+</head>
+
+<body>
+    <div class="skip">
+        <a href="#gnb">메뉴바로가기</a>
+        <a href="#container">콘텐츠바로가기</a>
+    </div>
+    <header id="header">
+        <div class="inner">
+            <h1><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>
+            <ul class="nav1">
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="member.html">회원가입</a></li>
+            </ul>
+            <ul class="icon">
+                <li>
+                    <a class="search" href="javascript:void(0)"><img src="img/search_W.png" alt="search"></a>
+                </li>
+                <li>
+                    <a href="schedule.html"><img src="img/schedule.png" alt="schedule"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu">
+            <div class="menubox">
+                <ul class="nav2">
+                    <li><a href="javascript:void(0)">공연·전시</a>
+                        <ul class="sub">
+                            <li><a href="schedule.html">전체일정</a></li>
+                            <li><a href="javascript:void(0)">오늘의 공연·전시</a></li>
+                            <li><a href="javascript:void(0)">진행 예정 프로그램</a></li>
+                            <li><a href="javascript:void(0)">SAC 기획 프로그램</a></li>
+                            <li><a href="javascript:void(0)">패키지</a></li>
+                            <li><a href="javascript:void(0)">티켓 오픈 공지</a></li>
+                            <li><a href="javascript:void(0)">싹(SAC)딜</a></li>
+                            <li><a href="javascript:void(0)">당일 할인 티켓</a></li>
+                            <li><a href="javascript:void(0)">예매취소안내</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">공간·대관</a>
+                        <ul class="sub">
+                            <li><a href="javascript:void(0)">공간소개</a></li>
+                            <li><a href="javascript:void(0)">공간별 대관안내</a></li>
+                            <li><a href="javascript:void(0)">입장관 운영안내</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">아카데미</a>
+                        <ul class="sub">
+                            <li><a href="javascript:void(0)">아카데미 안내</a></li>
+                            <li><a href="javascript:void(0)">수강신청</a></li>
+                            <li><a href="javascript:void(0)">아카데미 FAQ</a></li>
+                            <li><a href="javascript:void(0)">오디션 신청</a></li>
+                            <li><a href="javascript:void(0)">나의강좌</a></li>
+                            <li><a href="javascript:void(0)">온라인 사군자</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">소식·이용·참여</a>
+                        <ul class="sub">
+                            <li><a href="javascript:void(0)">전담소식</a></li>
+                            <li><a href="javascript:void(0)">오시는길 주차안내</a></li>
+                            <li><a href="javascript:void(0)">편의 서비스</a></li>
+                            <li><a href="javascript:void(0)">입점매장</a></li>
+                            <li><a href="javascript:void(0)">고객센터</a></li>
+                            <li><a href="javascript:void(0)">이벤트</a></li>
+                            <li><a href="javascript:void(0)">세게음악분수(선곡표)</a></li>
+                            <li><a href="javascript:void(0)">포스트/웹진/매거진</a></li>
+                            <li><a href="javascript:void(0)">관람평</a></li>
+                            <li><a href="javascript:void(0)">관람예절</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">기관소개</a>
+                        <ul class="sub">
+                            <li><a href="javascript:void(0)">기관소개 메인</a></li>
+                            <li><a href="javascript:void(0)">예술의 전당소개</a></li>
+                            <li><a href="javascript:void(0)">특별사업</a></li>
+                            <li><a href="javascript:void(0)">정보공개</a></li>
+                            <li><a href="javascript:void(0)">기부금 활용내역</a></li>
+                            <li><a href="javascript:void(0)">후원하기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div> <!-- menubox 끝 -->
+            <div class="subbox"></div> <!-- 풀메뉴 배경 판 -->
+        </div> <!-- menu 끝 -->
+    </header>
+    <div class="search_box">
+        <div class="search_box1">
+            <div>
+                <a href="javascript:void(0)">
+                    <img src="img/search_W.png" alt="검색아이콘">
+                </a>
+                <input type="text" id="value" placeholder="검색어를 입력하세요.">
+            </div>
+            <div class="tag">
+                <ul>
+                    <li><a href="subpage.html">오셀로</a><span></span></li>
+                    <li><a href="javascript:void(0)">주차요금</a><span></span></li>
+                    <li><a href="javascript:void(0)">심청</a><span></span></li>
+                    <li><a href="javascript:void(0)">대관요금</a><span></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section class="hgroup">
+        <header>
+            <hgroup>
+                <h3>회원가입</h3>
+                <h4>회원 정보입력</h4>
+                <h5>회원 상세 정보입력 (*는 필수 입력)</h5>
+            </hgroup>
+        </header>
+    </section>
+    <fieldset id="container">
+        <legend class="skip">회원 상세 정보입력 (*는 필수 입력)</legend>
+        <form name="member_form" method="post" action="">
+            <div class="wrap">
+                <ul>
+                    <li>
+                        <label for="name">성명*</label>
+                        <input type="text" id="name" name="name">
+                    </li>
+                    <li>
+                        <label for="birth">생년월일*</label>
+                        <input type="text" id="birth" name="birth" placeholder="생년월일 8자리를 입력해주세요.">
+                    </li>
+                    <li>
+                        <label for="gender">성별*</label>
+                        <span><input type="radio" name="gender"><label for="">남자</label></span>
+                        <span><input type="radio" name="gender"><label for="">여자</label></span>
+                    </li>
+                    <li>
+                            <label for="id">아이디*</label>
+                            <input type="text" id="id" name="id" placeholder="8 ~ 16 자리를 입력해 주세요.">
+                        <div id="id2">
+                            <a href="javascript:void(0)" onclick="check_id()"><button>아이디 중복확인</button></a>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="pwd1">비밀번호*</label>
+                        <input type="password" id="pwd1" name="pwd1"
+                            placeholder="영문대소문자,숫자,특수문자를 포함해 9 ~ 16자리만 사용 하능 합니다.">
+                    </li>
+                    <li>
+                        <label for="pwd2">비밀번호 확인*</label>
+                        <input type="password" id="pwd2" name="pwd2">
+                    </li>
+                    <li>
+                        <label for="hp">연락처(휴대폰 번호)*</label>
+                        <input type="tel" id="hp" name="hp">
+                    </li>
+                    <li>
+                        <label for="email">이메일*</label>
+                        <input type="email" id="email" name="email">
+                    </li>
+                    <li>
+                        <label for="email_chk">이메일 수신여부*</label>
+                        <span><input type="radio" value="y" name="email_chk" id="email_y"><label for="email_y">예</label></span>
+                        <span><input type="radio" value="n" name="email_chk" id="email_n"><label for="email_n">아니오</label></span>
+                    </li>
+                    <li>
+                        <label for="sns_chk">SNS 수신여부*</label>
+                        <div class="text">
+                            <span><input type="radio" value="y" name="sns_chk" id="sns_y"><label for="sns_y">예</label></span>
+                            <span><input type="radio" value="n" name="sns_chk" id="sns_n"><label for="sns_n">아니오</label></span>
+                            <p>개인정보보호법 제22조 제3항에 따라 &lt;마케팅 활용에 관한 동의&gt;를 받고자 합니다.</p>
+                            <ul>
+                                <li>1. 수집목적 : 예술의전당 기획공연, 이벤트, 할인안내 동의 다양한 정보 제공</li>
+                                <li>2. 보유기간 : 개인정보 보유기간 만료시까지, 동의 유지기간 동안.</li>
+                                <li>3. 이용항목 : 휴대폰 번호, 이메일 주소 (동의사항에 한함)</li>
+                                <li>4. 동의거부시 불이익 : 고객은 동의를 거부할 권리가 있으며, <br>동의하지 않으실 경우 수집목적에 따른
+                                    이벤트 할인안내 등의 정보를 제공받을 수 없습니다.</li>
+                            </ul>
+                            <p>회원정보, 예매, 결제정보 및 서비스 중 정책 관련 내용은 수신동의 여부와 관계없이 발송됩니다.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </form>
+    </fieldset>
+    <div class="button_box">
+        <a href="member.html" onclick="reset_form()">돌아가기</a>
+        <a href="javascript:void(0)" onclick="check_input()">가입하기</a>
+    </div>
+    <div id="quick">
+        <ul>
+            <li><a href="schedule.html"><img src="img/calendar.png" alt="전체일정"><span>전체일정</span></a></li>
+            <li><a href="javascript:void(0)"><img src="img/calendar_check.png" alt="예매확인/취소"><span>예매확인/취소</span></a>
+            <li><a href="javascript:void(0)"><img src="img/building_B.png" alt="대관문의"><span>대관문의</span></a></li>
+            </li>
+            <li><a href="javascript:void(0)"><img src="img/icon.png" alt="챗봇"><span>챗봇</span></a></li>
+            <li class="top"><a href="javascript:void(0)"><img src="img/top.png" alt="TOP버튼"></a></li>
+        </ul>
+    </div>
+    <footer id="footer">
+        <div class="foot">
+            <div class="foot_left">
+                <h1 class="foot_logo"><img src="img/logo.png" alt="logo"></h1>
+                <div class="foot_box">
+                    <div>
+                        <p>C/S</p>
+                        <p>02-580-1300</p>
+                        <ul>
+                            <li>월 : 09:00~18:00</li>
+                            <li>화 - 일 : 09:00~20:00 (연중무휴)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>편의 서비스</p>
+                        <ul>
+                            <li><a href="javascript:void(0)">공간별 편의서비스</a></li>
+                            <li><a href="javascript:void(0)">전시장 편의서비스</a></li>
+                            <li><a href="javascript:void(0)">장애인 국가유공자</a></li>
+                            <li><a href="javascript:void(0)">이용안내</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="foot_right">
+                <ul>
+                    <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+                    <li><a href="javascript:void(0)">이용약관</a></li>
+                    <li><a href="javascript:void(0)">사이트맵</a></li>
+                    <li><a href="javascript:void(0)">정보공개</a></li>
+                    <li><a href="javascript:void(0)">오시는길 · 주차안내</a></li>
+                </ul>
+                <div class="foot_txt">
+                    <address>(우) 06757 서울시 서초구 남부순환로 2406 예술의전당</address>
+                    <p>copyrightⓒ2020 Seoul Arts Center. All rights Reserved.</p>
+                </div>
+                <ul>
+                    <li>대표자 장형준</li>
+                    <li>사업자등록번호 214-82-00264</li>
+                    <li>통신판매업신고 서초 제 0706호</li>
+                </ul>
+                <ul class="sns">
+                    <li>
+                        <a href="https://www.facebook.com/SeoulArtsCenter.Korea"><img src="img/sns_facebook.png"
+                                alt="facebook"></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/I_Love_SAC"><img src="img/sns_twitter.png" alt="twitter"></a></li>
+                    <li>
+                        <a href="https://www.instagram.com/seoul_arts_center/"><img src="img/sns_instargram.png"
+                                alt="instargram"></a>
+                    </li>
+                    <li>
+                        <a href="https://blog.naver.com/i_love_sac"><img src="img/sns_blog.png" alt="blog"></a>
+                    </li>
+                    <li>
+                        <a href="https://m.post.naver.com/i_love_sac?memberNo=33166497"><img src="img/sns_naverPOST.png"
+                                alt="naverPOST"></a>
+                    </li>
+                    <li>
+                        <a href="https://tv.naver.com/seoulartscenter"><img src="img/sns_naverTV.png" alt="naverTV"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCUn8h6aG6rCM1zvXKIuNpVQ"><img
+                                src="img/sns_youtube.png" alt="youtube"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.podbbang.com/channels/5932"><img src="img/sns_podbbang.png"
+                                alt="podbbang"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
